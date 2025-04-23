@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify
 import openai
 
 app = Flask(__name__)
-openai.api_key = "sk-REPLACE-WITH-YOUR-KEY"
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 @app.route('/edit-resume', methods=['POST'])
 def edit_resume():
