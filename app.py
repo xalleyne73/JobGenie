@@ -1,6 +1,8 @@
-
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import openai
+import os  # ✅ THIS LINE!
+from docx import Document
 
 app = Flask(__name__)
 openai.api_key = os.getenv("OPENAI_API_KEY")
