@@ -1,5 +1,5 @@
 
-flas
+flask
 flask-cors
 openai
 gunicorn
