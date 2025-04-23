@@ -20,7 +20,7 @@ def edit_resume():
         prompt = f"Improve this resume to be {goal}:\n\n{resume_text}"
 
         response = openai.ChatCompletion.create(
-            model="gpt-4",
+            model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": "You are a resume editing assistant."},
                 {"role": "user", "content": prompt}
